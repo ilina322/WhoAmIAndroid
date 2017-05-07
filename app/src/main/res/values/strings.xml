@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WhoAmI</string>
+    <string name="restarting_in">restarting in: %d seconds</string>
 </resources>

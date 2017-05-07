@@ -8,16 +8,14 @@ import java.util.List;
 public class Question {
     private String text;
     private List<Answer> answers;
-    private String videoPath;
 
-    public Question(String text, int videoRes , Answer...answers) {
+    public Question(String text, Answer...answers) {
         this.text = text;
-        this.videoPath = "android.resource://" + App.getContext().getPackageName() + "/" + videoRes;
         this.answers = Arrays.asList(answers);
     }
 
-    public String getVideoPath() {
-        return videoPath;
+    public Answer getAnswerAt(int index){
+        return answers.get(index);
     }
 
     public String getText() {
